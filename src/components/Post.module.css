@@ -18,13 +18,13 @@
   margin-top: 1rem;
 }
 
-.content p a {
+.link{
   font-weight: bold;
   color: var(--green-500);
   text-decoration: none;
 }
 
-.content p a:hover {
+.link {
   color: var(--green-300);
 }
 
