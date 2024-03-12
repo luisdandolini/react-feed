@@ -30,7 +30,12 @@ export function Post({ author, publishedAt, content }) {
   }
 
   function handleNewCommnentChange(event) {
+    event.target.setCustomValidity('');
     setNewCommentText(event.target.value);
+  }
+
+  function handleNewCommnentInvalid(event) {
+    event.target.setCustomValidity('Por favor, preencha o comentário');
   }
 
   function deleteComment(comment) {
@@ -38,6 +43,8 @@ export function Post({ author, publishedAt, content }) {
 
     setComments(commentsWithoutDeleted);
   }
+
+  const isNewCommentInputEmpty = newCommentText.length === 0;
 
   return (
     <article className={styles.post}>
@@ -78,10 +85,12 @@ export function Post({ author, publishedAt, content }) {
           name='comment'
           onChange={handleNewCommnentChange}
           value={newCommentText}
+          onInvalid={handleNewCommnentInvalid}
+          required
         />
 
         <footer>
-          <button type="submit">Publicar</button>
+          <button type="submit" disabled={isNewCommentInputEmpty}>Publicar</button>
         </footer>
       </form>
 
