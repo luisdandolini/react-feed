@@ -1,8 +1,29 @@
-# React + Vite
+# :checkered_flag: React Feed
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Preview
 
-Currently, two official plugins are available:
+![preview](https://i.ibb.co/1RGV8YP/Captura-de-Tela-2024-03-12-a-s-19-09-14.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# :open_book: Sobre o projeto 
+
+Projeto criado para o treinamento sobre estados em React.
+
+# :computer: Tecnologias utilizadas 
+## Front End
+- JSX
+- HTML
+- CSS
+- React
+
+# :runner: Como executar o projeto
+
+```bash
+# Clonar o repositório:
+git clone https://github.com/luisdandolini/react-feed.git
+
+# Instalar as dependências
+npm install
+
+# Executar o projeto
+npm run dev
+```
